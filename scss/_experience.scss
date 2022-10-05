@@ -1,0 +1,89 @@
+.experience {
+	background: #fafafa;
+	padding: 211px 0px 80px;
+
+	@media (max-width: 1000px) {
+		padding: 80px 0px 25px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 50px 0px 10px;
+	}
+
+	&__body {
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 10px;
+
+		@media (max-width: 480px) {
+			font-size: 30px;
+		}
+	}
+
+	&__text {
+		max-width: 511px;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 50px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		margin: 0px -20px;
+
+		@media (max-width: 1000px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__item {
+		margin: 0px 20px;
+		padding: 30px;
+	}
+}
+
+.experience-item {
+	background: #fff;
+	flex: 0 1 25%;
+	text-align: center;
+
+	@media (max-width: 1000px) {
+		flex: 0 1 44%;
+		margin-bottom: 15px;
+	}
+
+	@media (max-width: 768px) {
+		flex: 0 1 100%;
+
+		&:last-child {
+			margin-bottom: unset;
+		}
+	}
+
+	&__icon {
+		height: 48px;
+		margin-bottom: 10px;
+	}
+
+	&__numbers {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 142%;
+		letter-spacing: 0.2px;
+		color: $title-color;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+	}
+}

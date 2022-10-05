@@ -1,0 +1,138 @@
+.first {
+	position: relative;
+	padding: 184px 0px 191px;
+
+	@media (max-width: 1000px) {
+		margin-bottom: 15px;
+	}
+
+	@media (max-width: 768px) {
+		padding-top: 0px;
+		padding-bottom: 35px;
+		margin-bottom: unset;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+
+		@media (max-width: 1000px) {
+			opacity: 0.4;
+		}
+
+		@media (max-width: 768px) {
+			position: relative;
+			z-index: 1;
+			height: 300px;
+			opacity: 1;
+			margin-bottom: 36px;
+		}
+
+		@media (max-width: 480px) {
+			height: 200px;
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: right;
+		}
+	}
+
+	&__body {
+		max-width: 509px;
+		& > * + * {
+			margin-top: 35px;
+
+			@media (max-width: 768px) {
+				margin-top: 25px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			max-width: 100%;
+		}
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 58px;
+		line-height: 138%;
+		letter-spacing: 0.2px;
+		color: $title-color;
+
+		@media (max-width: 480px) {
+			font-size: 35px;
+		}
+	}
+
+	&__text {
+		max-width: 376px;
+		font-size: 20px;
+		line-height: 150%;
+
+		@media (max-width: 768px) {
+			max-width: 100%;
+		}
+	}
+
+	&__buttons {
+		& > * + * {
+			margin-left: 10px;
+
+			@media (max-width: 480px) {
+				margin-left: 0px;
+				margin-top: 10px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__btn {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 200%;
+		text-align: center;
+		letter-spacing: 0.2px;
+		border-radius: 37px;
+		padding: 10px 36px;
+		background: transparent;
+		border: 1px solid transparent;
+	}
+
+	&__btn--orange {
+		background: $orange-color;
+		color: #fff;
+		transition: all 0.3s;
+
+		&:hover {
+			background: transparent;
+			border-color: $green-color;
+			color: $green-color;
+		}
+	}
+
+	&__btn--green {
+		color: $green-color;
+		border-color: $green-color;
+		transition: all 0.3s;
+
+		&:hover {
+			background: $orange-color;
+			border-color: transparent;
+			color: #fff;
+		}
+	}
+}

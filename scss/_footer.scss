@@ -1,0 +1,187 @@
+.footer {
+	padding: 40px 0px 25px;
+
+	&__top {
+		margin-bottom: 40px;
+	}
+
+	&__middle {
+		background: #17213c;
+		padding: 50px 0px;
+	}
+
+	&__bottom {
+		margin-top: 25px;
+	}
+}
+
+.footer-top {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+
+		@media (max-width: 768px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 133%;
+		letter-spacing: 0.1px;
+		color: $title-color;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+	}
+
+	&__btn {
+		font-weight: 700;
+		line-height: 200%;
+		letter-spacing: 0.2px;
+		color: #fff;
+		background: $orange-color;
+		border-radius: 5px;
+		padding: 15px 40px;
+		margin-right: 38px;
+		transition: all 0.3s;
+
+		&:hover {
+			border: 1px solid $green-color;
+			background: transparent;
+			color: $green-color;
+		}
+
+		@media (max-width: 1000px) {
+			margin-right: unset;
+		}
+	}
+}
+
+.footer-middle {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 1000px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__list {
+		@media (max-width: 1000px) {
+			flex: 0 1 50%;
+			&:not(:last-child) {
+				margin-bottom: 35px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+		color: #fff;
+		margin-bottom: 20px;
+
+		@media (max-width: 1000px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__item {
+		display: flex;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__link {
+		font-weight: 600;
+		line-height: 171%;
+		color: #fff;
+		transition: all 0.3s;
+
+		&:hover {
+			color: $orange-color;
+		}
+	}
+
+	&__icon {
+		width: 24px;
+		margin-right: 10px;
+
+		svg {
+			max-width: 100%;
+		}
+	}
+}
+
+.footer-bottom {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__legal {
+		font-weight: 600;
+		line-height: 171%;
+
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		margin: 0px 40px;
+		align-items: center;
+
+		@media (max-width: 1000px) {
+			margin: unset;
+		}
+	}
+
+	&__item {
+		& + * {
+			margin-left: 20px;
+		}
+	}
+
+	&__link {
+		svg {
+			transition: all 0.3s;
+		}
+
+		svg:hover {
+			transform: scale(1.3);
+		}
+	}
+}

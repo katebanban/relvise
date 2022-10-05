@@ -1,0 +1,152 @@
+.getintouch {
+	background: #f3f3f3;
+	padding: 80px 0px 178px;
+
+	@media (max-width: 1000px) {
+		padding-bottom: 80px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 50px 0 50px;
+	}
+
+	&__body {
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		text-align: center;
+
+		@media (max-width: 480px) {
+			font-size: 30px;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		max-width: 470px;
+		margin: 0 auto;
+		margin-bottom: 110px;
+
+		@media (max-width: 1000px) {
+			margin-bottom: 45px;
+		}
+
+		@media (max-width: 768px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		max-width: 986px;
+		margin: 0 auto;
+
+		@media (max-width: 1000px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__item {
+		flex: 0 1 33.333%;
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 50px 40px;
+
+		&:not(:last-child) {
+			margin-right: 32px;
+			@media (max-width: 1000px) {
+				margin: 0;
+				margin-bottom: 32px;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			flex: 0 1 46%;
+
+			&:first-child {
+				margin-right: 32px;
+
+				@media (max-width: 768px) {
+					margin-right: unset;
+				}
+			}
+		}
+
+		@media (max-width: 768px) {
+			flex: 0 1 100%;
+		}
+	}
+}
+
+.getintouch-item {
+	transition: all 0.3s;
+	&:hover {
+		background: $title-color;
+		transform: scale(1.2);
+
+		.getintouch-item__icon svg path {
+			fill: #fff;
+		}
+
+		.getintouch-item__text {
+			color: #fff;
+		}
+
+		.getintouch-item__title {
+			color: #fff;
+		}
+
+		.getintouch-item__btn {
+			color: #fff;
+			border-color: #fff;
+		}
+
+		@media (max-width: 1000px) {
+			transform: scale(1.1);
+		}
+	}
+
+	&__icon {
+		margin-bottom: 15px;
+
+		svg path {
+			transition: all 0.3s;
+		}
+	}
+
+	&__text-box {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	&__text {
+		font-weight: 600;
+		line-height: 171%;
+		color: $title-color;
+		transition: all 0.3s;
+	}
+
+	&__title {
+		margin-bottom: 15px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+		color: $title-color;
+		transition: all 0.3s;
+	}
+
+	&__btn {
+		font-weight: 600;
+		line-height: 171%;
+		color: $orange-color;
+		border: 1px solid $orange-color;
+		border-radius: 5px;
+		padding: 10px 20px;
+		transition: all 0.3s;
+	}
+}

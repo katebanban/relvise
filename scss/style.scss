@@ -1,0 +1,47 @@
+//Обнуляющие стили
+@import "_reset.scss";
+
+//Шрифты
+@import "_fonts.scss";
+
+//Переменные
+@import "_var.scss";
+
+//Базовый стиль (body, container, wrapper, повторяющиеся эл-ты)
+@import "_base.scss";
+
+//HEADER
+@import "_header.scss";
+
+//MAIN
+@import "_main.scss";
+
+//FIRST
+@import "_first.scss";
+
+//CARDS
+@import "_cards.scss";
+
+//EXPERIENCE
+@import "_experience.scss";
+
+//ADVICE
+@import "_advice.scss";
+
+//ABOUT
+@import "_about.scss";
+
+//PARTNERS
+@import "_partners.scss";
+
+//SUBSCRIBE
+@import "_subscribe.scss";
+
+//GETINTOUCH
+@import "_getintouch.scss";
+
+//FOOTER
+@import "_footer.scss";
+
+//NOTES
+@import "_notes.scss";
